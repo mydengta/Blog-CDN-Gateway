@@ -6,6 +6,7 @@ const CONFIG = {
         'https://fastly.blog.cmliussss.com#Fastly CDN',
         'https://gcore.blog.cmliussss.com#Gcore CDN',
         'https://vercel.blog.cmliussss.com#Vercel CDN',
+        'https://netlify.blog.cmliussss.com#Netlify CDN',
         'https://dooki.blog.cmliussss.com#DokiDoki CDN',
         'https://xn--1uto7rutmzjk.dpdns.org#备用地址'
     ],

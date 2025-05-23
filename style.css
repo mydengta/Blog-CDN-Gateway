@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://raw.cmliussss.com/keqing1080p.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 30px;
+    width: 480px;
+    min-height: 620px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.logo-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+    object-fit: cover;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(107, 223, 143, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(107, 223, 143, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(107, 223, 143, 0);
+    }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    color: #1a1f36;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #6bdf8f;
+    border-radius: 2px;
+}
+
+.description {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    color: #1a1f36;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(5px);
+}
+
+.beian-info a {
+    color: #6bdf8f;
+    text-decoration: none;
+    border-bottom: 1px dashed #6bdf8f;
+    padding-bottom: 2px;
+}
+
+.beian-info a:hover {
+    border-bottom-style: solid;
+}
+
+#visitCount, #liveuser {
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 4px;
+}
+
+.github-corner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.github-corner svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    fill: #6bdf8f;
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    transition: fill 0.3s ease;
+}
+
+.github-corner:hover svg {
+    fill: #5bc77d;
+}
+
+.github-corner .octo-arm {
+    transform-origin: 130px 106px;
+}
+
+@keyframes octocat-wave {
+    0%, 100% { transform: rotate(0) }
+    20%, 60% { transform: rotate(-25deg) }
+    40%, 80% { transform: rotate(10deg) }
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .github-corner {
+        width: 60px;
+        height: 60px;
+    }
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
